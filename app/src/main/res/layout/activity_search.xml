@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite"
+        >
+
+        <ImageButton
+            android:id="@+id/go_back_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_goback"
+            android:padding="10dp"
+            android:background="@color/colorWhite"
+            />
+
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by name..."
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:background="@color/colorWhite"
+            />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="5dp"
+        android:text="Not Found!"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="5dp"
+        android:padding="3dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

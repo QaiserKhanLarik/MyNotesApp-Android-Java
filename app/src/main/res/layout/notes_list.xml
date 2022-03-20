@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/all_note_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/for_defaut_color"
+        >
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/note_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:layout_gravity="start"
+            android:layout_marginTop="15dp"
+            android:textSize="10sp"
+            />
+
+
+        <TextView
+            android:id="@+id/ids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:layout_gravity="start"
+            android:textSize="10sp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_arrow_right"
+            android:padding="10dp"
+            android:layout_marginTop="-15dp"
+            android:background="@drawable/white_bg"
+            />
+
+        <TextView
+            android:id="@+id/themes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="theme"
+            android:layout_gravity="start"
+            android:textSize="10sp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrey"
+    android:padding="5dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/search_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        >
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/my_searches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/search_img"
+            android:textSize="22sp"
+            android:text="asdfasdfas"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/my_searches_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_searches"
+            android:text="date"
+            android:textSize="18sp"
+            android:paddingLeft="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/open_note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_arrow_right"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_bg"
+            />
+
+
+        <TextView
+            android:id="@+id/n_ids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/open_note_text"
+            android:text="date"
+            android:textSize="18sp"
+            android:paddingLeft="30dp"
+            />
+
+        <TextView
+            android:id="@+id/n_themes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/n_ids"
+            android:text="date"
+            android:textSize="18sp"
+            android:paddingLeft="30dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
